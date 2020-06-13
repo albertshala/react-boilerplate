@@ -10,6 +10,11 @@
             "StackName": "amplify-c1cauthenticationui-dev-102534",
             "StackId": "arn:aws:cloudformation:us-east-1:000568857918:stack/amplify-c1cauthenticationui-dev-102534/6c2b9370-abef-11ea-8375-0acf59e535ed",
             "AmplifyAppId": "d14xd7pmg7h7a7"
+        },
+        "categories": {
+            "auth": {
+                "c1cauthenticationui4dad99b3": {}
+            }
         }
     }
 }

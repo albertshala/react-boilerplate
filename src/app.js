@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { withAuthenticator } from '@aws-amplify/ui-react';
 import { hot } from 'react-hot-loader';
 import { API, graphqlOperation } from 'aws-amplify';
 import { createTodo } from './graphql/mutations';
@@ -97,4 +98,4 @@ const styles = {
   },
 };
 
-export default hot(module)(App);
+export default hot(module)(withAuthenticator(App));

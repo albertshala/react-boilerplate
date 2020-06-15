@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { withAuthenticator } from '@aws-amplify/ui-react';
+import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react';
 import { hot } from 'react-hot-loader';
 import { API, graphqlOperation } from 'aws-amplify';
 import { createTodo } from './graphql/mutations';
@@ -44,6 +44,7 @@ const App = () => {
   return (
     <div style={styles.container}>
       <h2>Amplify Todos</h2>
+      <AmplifySignOut />
       <input
         onChange={(event) => setInput('name', event.target.value)}
         style={styles.input}
